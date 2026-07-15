@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">Connected engineering workflow</title>
+  <desc id="desc">A blueprint diagram linking product engineering, automation, and operations.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#091625"/>
+      <stop offset="1" stop-color="#102b40"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#7aa7bd" stroke-width=".6" opacity=".09"/>
+    </pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="5" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="340" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="340" rx="18" fill="url(#grid)"/>
+  <text x="50" y="46" fill="#e4edf3" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">One connected engineering system</text>
+  <text x="1150" y="43" text-anchor="end" fill="#789bad" font-family="Consolas, monospace" font-size="11" letter-spacing="2">CONCEPT  /  CONFIGURE  /  BUILD  /  LEARN</text>
+
+  <path d="M205 171H995" fill="none" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M205 171H995" fill="none" stroke="#f59e0b" stroke-width="10" opacity=".08" filter="url(#glow)"/>
+
+  <g font-family="Consolas, monospace">
+    <g transform="translate(70 82)">
+      <rect width="270" height="210" rx="12" fill="#0b1b2a" stroke="#466b80" stroke-width="1.5"/>
+      <text x="22" y="29" fill="#f59e0b" font-size="11" letter-spacing="2">01 / PRODUCT ENGINEERING</text>
+      <g transform="translate(79 54)" fill="none" stroke-linejoin="round">
+        <path d="M0 48L56 17L112 48L56 79Z" stroke="#e1ebf1" stroke-width="2"/>
+        <path d="M0 48V106L56 138V79M112 48V106L56 138" stroke="#7397aa" stroke-width="2"/>
+        <path d="M25 62L56 45L87 62L56 79Z" stroke="#f59e0b" stroke-width="2"/>
+        <path d="M-18 8H130M-10 2V14M122 2V14" stroke="#f59e0b" stroke-width="1"/>
+      </g>
+      <text x="135" y="184" text-anchor="middle" fill="#c5d5de" font-family="Segoe UI, Arial, sans-serif" font-size="15">Model the product</text>
+    </g>
+
+    <g transform="translate(465 82)">
+      <rect width="270" height="210" rx="12" fill="#0b1b2a" stroke="#466b80" stroke-width="1.5"/>
+      <text x="22" y="29" fill="#f59e0b" font-size="11" letter-spacing="2">02 / AUTOMATION</text>
+      <g transform="translate(64 55)" fill="none">
+        <rect width="142" height="93" rx="6" stroke="#dce8ee" stroke-width="2"/>
+        <path d="M0 24H142" stroke="#7195a8"/>
+        <circle cx="13" cy="12" r="3" fill="#f59e0b" stroke="none"/>
+        <circle cx="24" cy="12" r="3" fill="#7195a8" stroke="none"/>
+        <path d="M22 48L43 67L22 85M61 85H104" stroke="#f59e0b" stroke-width="2.5"/>
+        <circle cx="124" cy="66" r="24" stroke="#7195a8" stroke-width="2"/>
+        <circle cx="124" cy="66" r="7" stroke="#dce8ee" stroke-width="2"/>
+        <path d="M124 34V42M124 90V98M92 66H100M148 66H156M101 43L107 49M141 83L147 89M147 43L141 49M107 83L101 89" stroke="#7195a8" stroke-width="3"/>
+      </g>
+      <text x="135" y="184" text-anchor="middle" fill="#c5d5de" font-family="Segoe UI, Arial, sans-serif" font-size="15">Connect the workflow</text>
+    </g>
+
+    <g transform="translate(860 82)">
+      <rect width="270" height="210" rx="12" fill="#0b1b2a" stroke="#466b80" stroke-width="1.5"/>
+      <text x="22" y="29" fill="#f59e0b" font-size="11" letter-spacing="2">03 / DATA &amp; OPERATIONS</text>
+      <g transform="translate(69 57)">
+        <ellipse cx="65" cy="14" rx="58" ry="14" fill="#18384b" stroke="#dce8ee" stroke-width="2"/>
+        <path d="M7 14V83C7 94 33 103 65 103S123 94 123 83V14" fill="#123047" stroke="#769aab" stroke-width="2"/>
+        <path d="M7 47C7 58 33 67 65 67S123 58 123 47M7 80C7 91 33 100 65 100S123 91 123 80" fill="none" stroke="#769aab"/>
+        <path d="M25 82V65M47 82V52M69 82V60M91 82V36" stroke="#f59e0b" stroke-width="6"/>
+      </g>
+      <text x="135" y="184" text-anchor="middle" fill="#c5d5de" font-family="Segoe UI, Arial, sans-serif" font-size="15">Improve the operation</text>
+    </g>
+  </g>
+
+  <g fill="#f59e0b">
+    <circle cx="205" cy="171" r="7" filter="url(#glow)"/>
+    <circle cx="600" cy="171" r="7" filter="url(#glow)"/>
+    <circle cx="995" cy="171" r="7" filter="url(#glow)"/>
+  </g>
+  <text x="50" y="320" fill="#789bad" font-family="Consolas, monospace" font-size="10" letter-spacing="2">DIGITAL THREAD / REV A</text>
+  <text x="1150" y="320" text-anchor="end" fill="#789bad" font-family="Consolas, monospace" font-size="10">PRIVATE SOURCE / VISIBLE PURPOSE</text>
+</svg>
